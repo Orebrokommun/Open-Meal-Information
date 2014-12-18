@@ -10,7 +10,7 @@ This API method list all Data Providers that have implemented the Open Meal API 
 <table>
 	<tr>
 		<td>URL: </td>
-		<td>http://github</td>
+		<td>[https://raw.githubusercontent.com/Orebrokommun/Open-Meal-Information/master/dataproviders.json](https://raw.githubusercontent.com/Orebrokommun/Open-Meal-Information/master/dataproviders.json)</td>
 	</tr>
 	<tr>
 		<td>HTTP Method: </td>
@@ -46,7 +46,7 @@ The method returns a list of Data Providers, including name, contact information
 
 ##Example
 
-	GET http://github...
+	GET https://raw.githubusercontent.com/Orebrokommun/Open-Meal-Information/master/dataproviders.json
 
     {
 	    "status" : 200,
