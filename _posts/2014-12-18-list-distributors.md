@@ -43,7 +43,7 @@ The method returns a list of Distributors, including name, contact information a
 |email|String|A contact email address for the organisation|No|
 |phone|String|A contact phone number for the organisation|No|
 |dataProviderID|String|Identifiying the Distributor within the Data Providers systems, not a unique ID across several Data Providres. Used to get data for a specific Distributor|Yes (for Distributors)|
-|ical|String|The URL to an iCal feed with the meal information|No|
+|iCalendar|String|The URL to an iCalendar feed with the meal information. [Read more](/doc/icalendar.html) information about the optional iCalendar feature.|No|
 
 ##Example
 
