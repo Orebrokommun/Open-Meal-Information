@@ -9,7 +9,7 @@ The Open Meal API is a specification of how information about the food served in
 There are a few concepts that are fundamental to understanding and using the Open Meal API:
 
 * **Data Provider** - the organisation that publishes data according the Open Meal API specification. Since the Open Meal API does not have a central repository of meal data there will potentially be several Data Providers for any given country, state or city. Typically there is just one Data Provider that publishes meal information for a specific Distributor.
-* **Distributor** - the organisation that serves the food, for example a school or a retirement home. Information about the food served is available through the Open Meal API via a Data Provider.
+* **Distributor** - the organisation that serves the food, for example a school or a retirement home. If the food is delivered the Distiributor is the organisation that provides the food. Information about the food served is available through the Open Meal API via a Data Provider.
 * **Meal** - a collection of Courses served at a specific time at a specific Distributor, for example lunch at a school. 
 * **Course** - a dish available in a Meal. Each Meal can have several Courses, ie several food alternatives served. A Course can contain descriptions of the ingredients, nutrition, allegens etc that the food contains.
 
