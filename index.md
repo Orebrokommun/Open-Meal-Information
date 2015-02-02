@@ -23,7 +23,7 @@ The response is UTF-8 encoded and has the the same basic structure for all metho
 |-----------|------|--------------|-------------|
 |status|Integer|The HTTP Status of the response|Yes|
 |data|List|The method specific data|Yes, if an error has not occured|
-|error|String|A description of an error|Yes, if an error has occured (ie status is not set to 200 OK)|
+|error|String|A description of an error. This text should always be in English and be aimed at the developer using the API to make it easier to debug any problems with an API client. |Yes, if an error has occured (ie status is not set to 200 OK)|
 
 Return HTTP Status 200 OK if a everything works as it should with a request, HTTP Status 404 is a resource (URL) is not found, HTTP 400 if a request is incorrectly formated and HTTP 500 if something else goes wrong.
 

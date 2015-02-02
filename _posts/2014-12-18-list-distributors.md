@@ -32,6 +32,7 @@ The method returns a list of Distributors, including name, contact information a
 |Property|Type|Description|Required?|
 |-----------|------|--------------|-------------|
 |name|String|The name of the organisation|Yes|
+|lang|String|The 2-letter [ISO 639 alpha-2](http://en.wikipedia.org/wiki/ISO_639-1) language code describing the language used in all Strings of this object. For example *sv* for Swedish.|Yes|
 |description|String|A brief description of the organisation|No|
 |address|Object|The address of the organisation|Yes|
 |address > streetAddress|String|The street address|No|
@@ -54,7 +55,8 @@ The method returns a list of Distributors, including name, contact information a
 	    "status" : 200,
 	    "data" : [
 	    	{
-				"name" : "The Local School",		
+				"name" : "The Local School",	
+				"lang" : "en",	
 				"address" : {
 					"streetAddress" : "Main Street 42",
 					"postalCode" : "555 55",
