@@ -50,7 +50,6 @@ The method returns a list of Data Providers, including name, contact information
 	GET https://raw.githubusercontent.com/Orebrokommun/Open-Meal-Information/master/dataproviders.json
 
     {
-	    "status" : 200,
 	    "data" : [
 	    	{
 				"name" : "Food Industries Inc.",	

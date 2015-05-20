@@ -52,7 +52,6 @@ The method returns a list of Distributors, including name, contact information a
     GET http://openmeal.foodindustries.inc/openmeal/v2/distributors.json?addressCountry=SE
     
     {
-	    "status" : 200,
 	    "data" : [
 	    	{
 				"name" : "The Local School",	

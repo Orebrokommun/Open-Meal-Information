@@ -21,7 +21,6 @@ The response is UTF-8 encoded and has the the same basic structure for all metho
 
 |Property|Type|Description|Required?|
 |-----------|------|--------------|-------------|
-|status|Integer|The HTTP Status of the response|Yes|
 |data|List|The method specific data|Yes, if an error has not occured|
 |error|String|A description of an error. This text should always be in English and be aimed at the developer using the API to make it easier to debug any problems with an API client. |Yes, if an error has occured (ie status is not set to 200 OK)|
 
@@ -30,7 +29,6 @@ Return HTTP Status 200 OK if a everything works as it should with a request, HTT
 Example:
 
     {
-	    "status" : 200,
 	    "data" : [
 	 	   ...
 	    ]
