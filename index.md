@@ -2,40 +2,27 @@
 layout: default
 title: "Open Meal Information"
 ---
-#Open Meal API
-The Open Meal API is a specification of how information about the food served in large scale kitchens (for example schools and retirement homes) can be distributed as Open Data in such a way that it can be used by developers to build new applications and user experiences. The Open Meal API does not have a central repository of meal data, instead the API specification is implemented by organisations that want to distribute this kind of data. 
- 
-##Concepts
-There are a few concepts that are fundamental to understanding and using the Open Meal API:
+#Welcome to Open Information for Meals!
 
-* **Data Provider** - the organisation that publishes data according the Open Meal API specification. Since the Open Meal API does not have a central repository of meal data there will potentially be several Data Providers for any given country, state or city. Typically there is just one Data Provider that publishes meal information for a specific Distributor.
-* **Distributor** - the organisation that serves the food, for example a school or a retirement home. If the food is delivered the Distiributor is the organisation that provides the food. Information about the food served is available through the Open Meal API via a Data Provider.
-* **Meal** - a collection of Courses served at a specific time at a specific Distributor, for example lunch at a school. 
-* **Course** - a dish available in a Meal. Each Meal can have several Courses, ie several food alternatives served. A Course can contain descriptions of the ingredients, nutrition, allegens etc that the food contains.
+The goal is to create a way to create open data about menus, ingredients, nutritional values and allergens in a consistent way. We want to make it as easy as possible to reuse the information. We are hoping that the specification will be used by many not only in Sweden as to make using the information fun and easy.
 
-##Requests
-Requests to the Open Meal API are mostly made directly to Data Providers servers (the only exception being the [List Data Providers]() method). All parameters need to bed URL encoded. The data format of the response is set with a URL suffix (*.json*) and at the moment only JSON is supported.
+The specification and other information for how to create open meal information can be found on this webpage and as it is on Github anyone can fork and develop it. There are two implementations of the specification:
 
-##Responses
-The response is UTF-8 encoded and has the the same basic structure for all methods:
+* An [API](/Open-Meal-Information/doc/basics.html) with the full data set in JSON format
+* [iCalendar](/Open-Meal-Information/doc/icalendar.html) with a subset of the information. The calendar-feed can be used by smartphones and pads as well as other calendar software to subscribe to the information.
 
-|Property|Type|Description|Required?|
-|-----------|------|--------------|-------------|
-|data|List|The method specific data|Yes, if an error has not occured|
-|error|String|A description of an error. This text should always be in English and be aimed at the developer using the API to make it easier to debug any problems with an API client. |Yes, if an error has occured (ie status is not set to 200 OK)|
+Questions and suggestions can be sent to [bjorn.hagstrom@orebro.se](mailto:bjorn.hagstrom@orebro.se).
 
-Return HTTP Status 200 OK if a everything works as it should with a request, HTTP Status 404 is a resource (URL) is not found, HTTP 400 if a request is incorrectly formated and HTTP 500 if something else goes wrong.
+##The History
+The open meal information project was started by 3 municipalities in Sweden - [Helsingborg](http://www.helsingborg.se/), [Linköping](http://linkoping.se/) and [Örebro](http://www.orebro.se/). The goal was to make sure all municipalities in Sweden shared information about meals as menus in the same way so it would be easier to reuse. The goal was to create open data.
 
-Example:
+After first trying and failing to find an existing specification for sharing the information they decided to create one of their own. The first version of the specification was very basic and was not published on github.
 
-    {
-	    "data" : [
-	 	   ...
-	    ]
-    }
-    
+For the second part of the project the municipality of [Örebro](http://www.orebro.se/) sought and got funds from [VINNOVA](http://vinnova.se/), Swedens innovation agency, to create an expanded specification including the original menu but also ingredients, nutritional values and allergens. The project ran from november 2014 thru june 2015 and involved the municipality och [Örebro](http://www.orebro.se/), [Dopter AB](http://www.dopter.se/) represented by Andreas Krohn and [Mashie AB](http://www.mashie.se/), the supplier och the system for planing meals at the municipality, represented by Erik Arnwald and Jörgen Brandt.
+
+The goal was to create an open specification that could be used by all suppliers of systems for planning meals and delivering menus and to keep it as small as possible as to not create unnecessary overhead for suppliers. The project delivered an specification for delivering the content as JSON and another as iCal for use with electronic calendars.
+
+One motivation for this project was to create a proof-of-concept for solving one of the problems identified by the national coordination of municipal open data headed by [SKL](http://skl.se/) (an organisation for cooperation run by the municipalities) namely that open data published by 290 municipalities in 290 different ways will be very hard to reuse. Since the value of open data is realized in the reuse this aspect is critical in achieving the desired effects (new and better services and transparency in government).
+
 ##Licence
 All data available via the Open Meal API is published under Creative Commons Zero, which give the consumer of the data full rights to modify the data and use it for commercial purposes.
-
-##Support
-Each Data Provider is responsible to provide support for their implementation of the Open Meal API. That includes fixing reported bugs, provide support to developers as well as to keep up to date with changes in the Open Meal API.    
