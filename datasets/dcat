@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:adms="http://www.w3.org/ns/adms#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dcat="http://www.w3.org/ns/dcat#"
+	xmlns:store="https://dcat-editor.com/store/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:odrs="http://schema.theodi.org/odrs#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:es="http://entrystore.org/terms/"
+	xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/">
+<dcat:Catalog rdf:about="https://dcat-editor.com/store/28/resource/dcat">
+	<dcterms:title>Open Meal</dcterms:title>
+	<dcterms:description>API to get data about what food is being served at large kitchens, like schools and elderly care homes. </dcterms:description>
+	<dcat:dataset rdf:resource="https://dcat-editor.com/store/28/resource/2"/>
+	<dcterms:publisher>
+		<foaf:Agent rdf:about="https://dcat-editor.com/store/28/resource/7">
+			<foaf:name>Örebro kommun</foaf:name>
+			<foaf:mbox rdf:resource="mailto:bjorn.hagstrom@orebro.se"/>
+			<dcterms:type rdf:resource="http://purl.org/adms/publishertype/LocalAuthority"/>
+		</foaf:Agent>
+	</dcterms:publisher>
+</dcat:Catalog>
+<dcat:Dataset rdf:about="https://dcat-editor.com/store/28/resource/2">
+	<dcterms:title xml:lang="en">Open Meal</dcterms:title>
+	<dcterms:title xml:lang="sv">Måltidsinformation som öppna data</dcterms:title>
+	<dcterms:description xml:lang="en">Meal information as open data, mainly for schools and other public institutions.</dcterms:description>
+	<dcterms:description xml:lang="sv">Måltidsinformation som öppna data, framförallt för skolor, ålderdomshem och liknande</dcterms:description>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/28/resource/3"/>
+	<dcterms:publisher rdf:resource="https://dcat-editor.com/store/28/resource/7"/>
+	<dcat:keyword>menu</dcat:keyword>
+	<dcat:keyword>food</dcat:keyword>
+	<dcat:keyword>meal</dcat:keyword>
+	<dcat:keyword>nutrition</dcat:keyword>
+	<adms:contactPoint rdf:resource="https://dcat-editor.com/store/28/resource/8"/>
+	<dcat:landingPage rdf:resource="http://orebrokommun.github.io/Open-Meal-Information/"/>
+	<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+</dcat:Dataset>
+<vcard:Individual rdf:about="https://dcat-editor.com/store/28/resource/8">
+	<vcard:fn>Björn Hagström</vcard:fn>
+	<vcard:hasEmail rdf:resource="mailto:bjorn.hagstrom@orebro.se"/>
+</vcard:Individual>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/28/resource/3">
+	<dcterms:title xml:lang="en">List Data Providers</dcterms:title>
+	<dcterms:title xml:lang="sv">Lista dataleverantörer </dcterms:title>
+	<dcterms:description xml:lang="en">An API to get all the open meal data providers that in turn can provide menus etc.</dcterms:description>
+	<dcterms:description xml:lang="sv">Ett API för att hämta information om alla Open Meals dataleverantörer. Dessa kan sedan i sin tur tillhandahålla menyinformation etc.</dcterms:description>
+	<dcat:accessURL rdf:resource="https://raw.githubusercontent.com/Orebrokommun/Open-Meal-Information/master/dataproviders.json"/>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcterms:format>application/json</dcterms:format>
+</dcat:Distribution>
+
+</rdf:RDF>
