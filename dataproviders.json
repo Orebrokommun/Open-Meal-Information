@@ -1,5 +1,13 @@
 {
-	"status" : 200,
 	"data" : [
+		{
+            "name" : "Mashie",    
+            "lang" : "sv",  
+            "address" : {           
+                "addressCountry" : "SE"
+            },
+            "url" : "http://www.mashie.se/",            
+            "baseUrl" : "https://mpi.mashie.eu/api"
+        }
 	]
 }
