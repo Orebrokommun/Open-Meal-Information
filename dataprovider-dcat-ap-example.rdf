@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:adms="http://www.w3.org/ns/adms#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dcat="http://www.w3.org/ns/dcat#"
+	xmlns:store="https://dcat-editor.com/store/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:odrs="http://schema.theodi.org/odrs#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:es="http://entrystore.org/terms/"
+	xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+	xmlns:dcterms="http://purl.org/dc/terms/">
+<dcat:Catalog rdf:about="https://dcat-editor.com/store/62/resource/dcat">
+	<dcterms:title xml:lang="sv">Open Meal: Dataleverantörsexempel</dcterms:title>
+	<dcterms:title xml:lang="en">Open Meal: Data Provider Example</dcterms:title>
+	<dcterms:description xml:lang="sv">Data från Dataleverantören om vilken mat som serveras i storkök, tex skolor och ålderdomshem. Data är formaterat enligt Open Meal specifikationen.</dcterms:description>
+	<dcterms:description xml:lang="en">Data from Data Provider about what food is being served at large kitchens, like schools and elderly care homes. The data is formated according to the Open Meal specification</dcterms:description>
+	<dcat:dataset rdf:resource="https://dcat-editor.com/store/62/resource/2"/>
+	<dcat:dataset rdf:resource="https://dcat-editor.com/store/62/resource/4"/>
+	<dcat:dataset rdf:resource="https://dcat-editor.com/store/62/resource/6"/>
+	<dcterms:publisher rdf:resource="https://dcat-editor.com/store/62/resource/1"/>
+</dcat:Catalog>
+<dcat:Dataset rdf:about="https://dcat-editor.com/store/62/resource/2">
+	<dcterms:title xml:lang="sv">Lista distributörer</dcterms:title>
+	<dcterms:title xml:lang="en">List Distributors</dcterms:title>
+	<dcterms:description xml:lang="en">An API call to list all distributors of meal data that the Data Provider has in it's system</dcterms:description>
+	<dcterms:description xml:lang="sv">Ett API-anrop för att lista alla distributörer av måltidsinformation som Dataleverantören har i sitt system</dcterms:description>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/62/resource/3"/>
+	<dcterms:publisher rdf:resource="https://dcat-editor.com/store/62/resource/1"/>
+	<adms:contactPoint>
+		<vcard:Organization rdf:about="https://dcat-editor.com/store/62/resource/9">
+			<vcard:fn>Data Provider</vcard:fn>
+			<vcard:hasEmail rdf:resource="mailto:info@dataproviderexample.com"/>
+		</vcard:Organization>
+	</adms:contactPoint>
+</dcat:Dataset>
+<foaf:Agent rdf:about="https://dcat-editor.com/store/62/resource/1">
+	<foaf:name>Data Provider</foaf:name>
+	<foaf:mbox rdf:resource="mailto:info@dataproviderexample.com"/>
+	<foaf:homepage>http://dataproviderexample.com</foaf:homepage>
+	<dcterms:type rdf:resource="http://purl.org/adms/publishertype/Company"/>
+</foaf:Agent>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/62/resource/3">
+	<dcat:accessURL rdf:resource="http://dataproviderexample.com/openmeal/v2/distributors.json"/>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcterms:format>application/json</dcterms:format>
+</dcat:Distribution>
+<dcat:Dataset rdf:about="https://dcat-editor.com/store/62/resource/6">
+	<dcterms:title xml:lang="sv">Måltidskalender</dcterms:title>
+	<dcterms:title xml:lang="en">Meal Calendar</dcterms:title>
+	<dcterms:description xml:lang="sv">Kalender med menyinformation</dcterms:description>
+	<dcterms:description xml:lang="en">Calendar feed with menu information</dcterms:description>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/62/resource/8"/>
+	<dcterms:publisher rdf:resource="https://dcat-editor.com/store/62/resource/1"/>
+	<adms:contactPoint rdf:resource="https://dcat-editor.com/store/62/resource/9"/>
+</dcat:Dataset>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/62/resource/8">
+	<dcat:accessURL rdf:resource="http://dataproviderexample.com/calendar.ical"/>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcterms:format>text/calendar</dcterms:format>
+</dcat:Distribution>
+<dcat:Dataset rdf:about="https://dcat-editor.com/store/62/resource/4">
+	<dcterms:title xml:lang="sv">Hämta måltider</dcterms:title>
+	<dcterms:title xml:lang="en">Get Meals</dcterms:title>
+	<dcterms:description xml:lang="sv">Hämta måltidsinformation, tex meny och näringsvärden</dcterms:description>
+	<dcterms:description xml:lang="en">Get meal information such as menu and nutritional values</dcterms:description>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/62/resource/5"/>
+	<dcterms:publisher rdf:resource="https://dcat-editor.com/store/62/resource/1"/>
+	<adms:contactPoint rdf:resource="https://dcat-editor.com/store/62/resource/9"/>
+</dcat:Dataset>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/62/resource/5">
+	<dcat:accessURL rdf:resource="http://dataproviderexample.com/openmeal/v2/meals.json"/>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcterms:format>application/json</dcterms:format>
+</dcat:Distribution>
+
+</rdf:RDF>
