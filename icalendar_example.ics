@@ -10,9 +10,9 @@ BEGIN:VEVENT
 DTSTART;VALUE=DATE:20150701
 UID:19960401T080045Z-4000F192713-0052@example.com
 CREATED:20140618T110000
-SUMMARY:Wokkyckling med pasta, grönsaker och tomatsalsa\nKöttbullar och spagetti
-DESCRIPTION:Wokkyckling med pasta, grönsaker och tomatsalsa\nKöttbullar och     spagetti\nGrönsakssoppa
-LOCATION:Storskolan, Örebro
+SUMMARY:Wokkyckling med pasta\, grönsaker och tomatsalsa\nKöttbullar och spagetti
+DESCRIPTION:Wokkyckling med pasta\, grönsaker och tomatsalsa\nKöttbullar och spagetti\nGrönsakssoppa
+LOCATION:Storskolan\, Örebro
 LAST-MODIFIED:20140618T110000
 SEQUENCE:0
 TRANSP:TRANSPARENT
