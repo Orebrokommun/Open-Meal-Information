@@ -13,6 +13,11 @@ The specification and other information for how to create open meal information 
 
 Questions and suggestions can be sent to [bjorn.hagstrom@orebro.se](mailto:bjorn.hagstrom@orebro.se).
 
+##Example
+This is an example of [an iCalendar feed available for subscription for the school ”Bruket” in Örebro, Sweden](https://mpi.mashie.eu/public/app/%C3%96rebro%20kommun/C7A32CE6). The page is in swedish but the subscription link is called ”Kalender” and is located in the menu on the left. Copy the link for use in your calendar software or just click it, most devices will ask you if you want to subscribe.This is what it will look like on an ipad:
+
+<img src="/Open-Meal-Information/img/ipad_icalendar_example.png" alt="Example of the iCalendar Open Meal feed on an iPad">
+
 ##The History
 The open meal information project was started by 3 municipalities in Sweden - [Helsingborg](http://www.helsingborg.se/), [Linköping](http://linkoping.se/) and [Örebro](http://www.orebro.se/). The goal was to make sure all municipalities in Sweden shared information about meals as menus in the same way so it would be easier to reuse. The goal was to create open data.
 
