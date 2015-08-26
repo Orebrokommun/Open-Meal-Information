@@ -17,7 +17,8 @@ sections: [
     ['tut', 'Tutorial'],
     ['ref', 'Reference'],
     ['dev', 'Developers'],
-    ['post', 'Posts']
+    ['post', 'Posts'],
+    ['swe', 'Svenska (Swedish)']
 ]
 
 # Keep as an empty string if served up at the root. If served up at a specific

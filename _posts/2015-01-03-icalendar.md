@@ -14,8 +14,8 @@ Each iCalendar file will be formated according to [RFC 5545](http://tools.ietf.o
 
 |Property|Description|Value|
 |--------|------------|-----|
+|VERSION|The version of iCalender that is used. This should be the first property of the Calendar.|2.0|
 |PRODID|A unique identifier for the product that is creating the iCalendar file. It is the responsibility of the publisher of the file to create a global unique identifier. For more information read [§3.7.3 in RFC 5545](http://tools.ietf.org/html/rfc5545#section-3.7.3).|Example:<br>*-//ABC Corporation//NONSGML My Product//EN*|
-|VERSION|The version of iCalender that is used|2.0|
 |CALSCALE|What type of calendar that is used|GREGORIAN|
 |METHOD| |PUBLISHED|
 |X-WR-CALNAME|The name of the calendar, it is recommended that it contains information about the type of meal as well as the name of the distributor|Example:<br>*Lunch at the South School* |
@@ -38,6 +38,8 @@ The meal of a day is described a [VEVENT](http://tools.ietf.org/html/rfc5545#sec
 |LAST-MODIFIED|Date and time when this event object was last updated. In the format YYYYMMDDTHHMMSS.Note that it is not allowed to use UTC offset when the time is specified.|Example:<br>*20140618T110000*|
 |SEQUENCE|The version number of this event object, starting at 0. If an event is updated the value of this property needs to be incremented.|Example:<br>*0*|
 |TRANSP|Specifies if the calendar event affects users accessibility for other events.|TRANSPARENT|
+
+For all text properties (Summary, Description, Location etc) special characters like commas, quotation marks, colons have to be escaped according to [§4.3.11 in RFC 2455](https://www.ietf.org/rfc/rfc2445.txt). For example this means that commas should be written "\," and backslashes "\\".
 
 ###Example
 
