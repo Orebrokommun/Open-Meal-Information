@@ -13,44 +13,150 @@
 	xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
 	xmlns:dcterms="http://purl.org/dc/terms/">
 <dcat:Catalog rdf:about="https://dcat-editor.com/store/28/resource/dcat">
-	<dcterms:title>Open Meal</dcterms:title>
-	<dcterms:description>API to get data about what food is being served at large kitchens, like schools and elderly care homes. </dcterms:description>
+	<dcterms:modified>2015-12-16</dcterms:modified>
+	<dcterms:title xml:lang="en">Open Meal</dcterms:title>
+	<dcterms:title xml:lang="sv">Open Meal</dcterms:title>
+	<dcterms:description xml:lang="sv">API för att hämta menyinformation för storkök som tex skolor och äldreboenden.</dcterms:description>
+	<dcterms:description xml:lang="en">API to get data about what food is being served at large kitchens, like schools and elderly care homes. </dcterms:description>
 	<dcat:dataset rdf:resource="https://dcat-editor.com/store/28/resource/2"/>
-	<dcterms:publisher>
-		<foaf:Agent rdf:about="https://dcat-editor.com/store/28/resource/7">
-			<foaf:name>Örebro kommun</foaf:name>
-			<foaf:mbox rdf:resource="mailto:bjorn.hagstrom@orebro.se"/>
-			<dcterms:type rdf:resource="http://purl.org/adms/publishertype/LocalAuthority"/>
-		</foaf:Agent>
-	</dcterms:publisher>
+	<dcterms:publisher rdf:resource="https://dcat-editor.com/store/28/resource/7"/>
+	<foaf:homepage>http://orebrokommun.github.io/Open-Meal-Information</foaf:homepage>
+	<dcterms:issued>2015-12-16</dcterms:issued>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+	<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+	<dcterms:rights>
+		<odrs:RightsStatement rdf:nodeID="node1a6q9d1r3x1">
+			<odrs:copyrightHolder>
+				<foaf:Agent rdf:about="https://dcat-editor.com/store/28/resource/7">
+					<foaf:name>Örebro kommun</foaf:name>
+					<foaf:mbox rdf:resource="mailto:andreas@dopter.se"/>
+					<foaf:homepage>http://www.orebro.se/</foaf:homepage>
+					<dcterms:type rdf:resource="http://purl.org/adms/publishertype/LocalAuthority"/>
+				</foaf:Agent>
+			</odrs:copyrightHolder>
+		</odrs:RightsStatement>
+	</dcterms:rights>
 </dcat:Catalog>
 <dcat:Dataset rdf:about="https://dcat-editor.com/store/28/resource/2">
+	<dcterms:modified>2015-09-18</dcterms:modified>
 	<dcterms:title xml:lang="en">Open Meal</dcterms:title>
 	<dcterms:title xml:lang="sv">Måltidsinformation som öppna data</dcterms:title>
 	<dcterms:description xml:lang="en">Meal information as open data, mainly for schools and other public institutions.</dcterms:description>
-	<dcterms:description xml:lang="sv">Måltidsinformation som öppna data, framförallt för skolor, ålderdomshem och liknande</dcterms:description>
+	<dcterms:description xml:lang="sv">Måltids- och menyinformation som öppna data, framförallt för skolor, ålderdomshem och liknande. Menyinformationen kommer från de dataleverantörer som tex kommuner redan använder för denna data.</dcterms:description>
 	<dcat:distribution rdf:resource="https://dcat-editor.com/store/28/resource/3"/>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/28/resource/14"/>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/28/resource/15"/>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/28/resource/18"/>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/28/resource/19"/>
 	<dcterms:publisher rdf:resource="https://dcat-editor.com/store/28/resource/7"/>
-	<dcat:keyword>menu</dcat:keyword>
-	<dcat:keyword>food</dcat:keyword>
-	<dcat:keyword>meal</dcat:keyword>
-	<dcat:keyword>nutrition</dcat:keyword>
-	<adms:contactPoint rdf:resource="https://dcat-editor.com/store/28/resource/8"/>
+	<dcat:keyword>iCal</dcat:keyword>
+	<dcat:keyword>api</dcat:keyword>
+	<dcat:keyword xml:lang="sv">skola</dcat:keyword>
+	<dcat:keyword xml:lang="sv">mat</dcat:keyword>
+	<dcat:keyword xml:lang="sv">näringsvärden</dcat:keyword>
+	<dcat:keyword xml:lang="sv">kalender</dcat:keyword>
+	<dcat:keyword xml:lang="sv">meny</dcat:keyword>
+	<dcat:keyword xml:lang="sv">skolmat</dcat:keyword>
+	<dcat:keyword xml:lang="en">menu</dcat:keyword>
+	<dcat:keyword xml:lang="en">food</dcat:keyword>
+	<dcat:keyword xml:lang="en">meal</dcat:keyword>
+	<dcat:keyword xml:lang="en">nutrition</dcat:keyword>
+	<adms:contactPoint rdf:resource="https://dcat-editor.com/store/28/resource/20"/>
+	<dcterms:issued>2015-09-18</dcterms:issued>
+	<dcat:theme rdf:resource="http://eurovoc.europa.eu/100157"/>
+	<dcterms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/continuous"/>
 	<dcat:landingPage rdf:resource="http://orebrokommun.github.io/Open-Meal-Information/"/>
-	<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+	<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+	<adms:version>2</adms:version>
 </dcat:Dataset>
-<vcard:Individual rdf:about="https://dcat-editor.com/store/28/resource/8">
-	<vcard:fn>Björn Hagström</vcard:fn>
-	<vcard:hasEmail rdf:resource="mailto:bjorn.hagstrom@orebro.se"/>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/28/resource/19">
+	<dcterms:title xml:lang="sv">Hämta meny (Mashie)</dcterms:title>
+	<dcterms:title xml:lang="en">Get Meals (Mashie)</dcterms:title>
+	<dcterms:description xml:lang="sv">Hämta menyn för ett kök som använder Mashie (tex en skola). ID (distributorID) på köket måste anges, detta ID fås från "Lista storkök" ("List Distributors")</dcterms:description>
+	<dcat:accessURL rdf:resource="https://mpi.mashie.eu/api/openmeal/v2/meals.json"/>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcterms:format>application/json</dcterms:format>
+	<dcat:downloadURL rdf:resource="https://mpi.mashie.eu/api/openmeal/v2/meals.json"/>
+	<dcterms:rights>
+		<odrs:RightsStatement rdf:nodeID="node1a6l242mtx1">
+			<odrs:copyrightHolder>
+				<foaf:Agent rdf:about="https://dcat-editor.com/store/28/resource/17">
+					<foaf:name>Mashie</foaf:name>
+					<foaf:homepage>http://www.mashie.se</foaf:homepage>
+					<dcterms:type rdf:resource="http://purl.org/adms/publishertype/Company"/>
+				</foaf:Agent>
+			</odrs:copyrightHolder>
+		</odrs:RightsStatement>
+	</dcterms:rights>
+</dcat:Distribution>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/28/resource/18">
+	<dcterms:title xml:lang="en">Get Meals (Skolmaten)</dcterms:title>
+	<dcterms:title xml:lang="sv">Hämta meny (Skolmaten)</dcterms:title>
+	<dcterms:description xml:lang="sv">Hämta menyn för en skola som använder Skolmaten. ID (distributorID) på skolan måste anges, detta ID fås från "Lista storkök" ("List Distributors")</dcterms:description>
+	<dcat:accessURL rdf:resource="http://meny.dinskolmat.se/api/openmeal/v2/meals.json"/>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcterms:format>application/json</dcterms:format>
+	<dcat:downloadURL rdf:resource="http://meny.dinskolmat.se/api/openmeal/v2/meals.json"/>
+	<dcterms:rights>
+		<odrs:RightsStatement rdf:nodeID="node1a6l21ptgx1">
+			<odrs:copyrightHolder>
+				<foaf:Agent rdf:about="https://dcat-editor.com/store/28/resource/16">
+					<foaf:name>Skolmaten</foaf:name>
+					<foaf:mbox rdf:resource="mailto:info@dinskolmat.se"/>
+					<foaf:homepage>http://dinskolmat.se</foaf:homepage>
+					<dcterms:type rdf:resource="http://purl.org/adms/publishertype/Company"/>
+				</foaf:Agent>
+			</odrs:copyrightHolder>
+		</odrs:RightsStatement>
+	</dcterms:rights>
+</dcat:Distribution>
+<vcard:Individual rdf:about="https://dcat-editor.com/store/28/resource/20">
+	<vcard:fn>Andreas Krohn</vcard:fn>
+	<vcard:hasEmail rdf:resource="mailto:andreas@dopter.se"/>
 </vcard:Individual>
 <dcat:Distribution rdf:about="https://dcat-editor.com/store/28/resource/3">
 	<dcterms:title xml:lang="en">List Data Providers</dcterms:title>
 	<dcterms:title xml:lang="sv">Lista dataleverantörer </dcterms:title>
-	<dcterms:description xml:lang="en">An API to get all the open meal data providers that in turn can provide menus etc.</dcterms:description>
-	<dcterms:description xml:lang="sv">Ett API för att hämta information om alla Open Meals dataleverantörer. Dessa kan sedan i sin tur tillhandahålla menyinformation etc.</dcterms:description>
+	<dcterms:description xml:lang="en">An API-anrop to get all the open meal data providers that in turn can provide menus etc.</dcterms:description>
+	<dcterms:description xml:lang="sv">Ett API-anrop för att hämta information om alla Open Meals dataleverantörer. Dessa kan sedan i sin tur tillhandahålla menyinformation etc.</dcterms:description>
 	<dcat:accessURL rdf:resource="https://raw.githubusercontent.com/Orebrokommun/Open-Meal-Information/master/dataproviders.json"/>
 	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
 	<dcterms:format>application/json</dcterms:format>
+	<dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/Orebrokommun/Open-Meal-Information/master/dataproviders.json"/>
+	<dcterms:rights>
+		<odrs:RightsStatement rdf:nodeID="node1a6q8mj0cx1">
+			<odrs:copyrightHolder rdf:resource="https://dcat-editor.com/store/28/resource/7"/>
+		</odrs:RightsStatement>
+	</dcterms:rights>
+</dcat:Distribution>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/28/resource/14">
+	<dcterms:title xml:lang="sv">Lista storkök (Mashie)</dcterms:title>
+	<dcterms:title xml:lang="en">List Distributors (Mashie)</dcterms:title>
+	<dcterms:description xml:lang="sv">Ett API-anrop för att få en lista på alla de distributörer (tex skolkök) för vilka Mashie publicerar menyinformation. Via detta anrop får man även veta ev. iCal-länk för varje kök för att kunna lista deras meny direkt i en kalender.</dcterms:description>
+	<dcat:accessURL rdf:resource="https://mpi.mashie.eu/api/openmeal/v2/distributors.json"/>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcterms:format>application/json</dcterms:format>
+	<dcat:downloadURL rdf:resource="https://mpi.mashie.eu/api/openmeal/v2/distributors.json"/>
+	<dcterms:rights>
+		<odrs:RightsStatement rdf:nodeID="node1a6l1ojesx1">
+			<odrs:copyrightHolder rdf:resource="https://dcat-editor.com/store/28/resource/17"/>
+		</odrs:RightsStatement>
+	</dcterms:rights>
+</dcat:Distribution>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/28/resource/15">
+	<dcterms:title xml:lang="en">List Distributors (Skolmaten)</dcterms:title>
+	<dcterms:title xml:lang="sv">Lista storkök (Skolmaten)</dcterms:title>
+	<dcterms:description>Ett API-anrop för att få en lista på alla de distributörer (tex skolkök) för vilka Skolmaten publicerar menyinformation. Via detta anrop får man även veta ev. iCal-länk för varje kök för att kunna lista deras meny direkt i en kalender.</dcterms:description>
+	<dcat:accessURL rdf:resource="http://meny.dinskolmat.se/api/openmeal/v2/distributors.json"/>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcterms:format>application/json</dcterms:format>
+	<dcat:downloadURL rdf:resource="http://meny.dinskolmat.se/api/openmeal/v2/distributors.json"/>
+	<dcterms:rights>
+		<odrs:RightsStatement rdf:nodeID="node1a6l1p4sax1">
+			<odrs:copyrightHolder rdf:resource="https://dcat-editor.com/store/28/resource/16"/>
+		</odrs:RightsStatement>
+	</dcterms:rights>
 </dcat:Distribution>
 
 </rdf:RDF>
