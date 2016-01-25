@@ -16,8 +16,8 @@
 	<dcterms:modified>2015-12-16</dcterms:modified>
 	<dcterms:title xml:lang="en">Open Meal</dcterms:title>
 	<dcterms:title xml:lang="sv">Open Meal</dcterms:title>
-	<dcterms:description xml:lang="sv">API för att hämta menyinformation för storkök som tex skolor och äldreboenden.</dcterms:description>
-	<dcterms:description xml:lang="en">API to get data about what food is being served at large kitchens, like schools and elderly care homes. </dcterms:description>
+	<dcterms:description xml:lang="sv">API för att hämta menyinformation för storkök som tex skolor och äldreboenden. Skolmatsmenyer finns tillgängliga för alla skolor som använder Skolmatappen, och kan publiceras för alla skolor som använder Mashie.</dcterms:description>
+	<dcterms:description xml:lang="en">API to get data about what food is being served at large kitchens, like schools and elderly care homes. Data already available for all schools in Sweden that is using the Skolmatappen as well as available for Swedish schools using Mashie that has requested that the menu data is published as open data.</dcterms:description>
 	<dcat:dataset rdf:resource="https://dcat-editor.com/store/28/resource/2"/>
 	<dcterms:publisher rdf:resource="https://dcat-editor.com/store/28/resource/7"/>
 	<foaf:homepage>http://orebrokommun.github.io/Open-Meal-Information</foaf:homepage>
@@ -26,7 +26,7 @@
 	<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
 	<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
 	<dcterms:rights>
-		<odrs:RightsStatement rdf:nodeID="node1a6q9d1r3x1">
+		<odrs:RightsStatement rdf:nodeID="node1a9rvkpr6x1">
 			<odrs:copyrightHolder>
 				<foaf:Agent rdf:about="https://dcat-editor.com/store/28/resource/7">
 					<foaf:name>Örebro kommun</foaf:name>
@@ -49,7 +49,11 @@
 	<dcat:distribution rdf:resource="https://dcat-editor.com/store/28/resource/15"/>
 	<dcat:distribution rdf:resource="https://dcat-editor.com/store/28/resource/18"/>
 	<dcat:distribution rdf:resource="https://dcat-editor.com/store/28/resource/19"/>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/28/resource/21"/>
+	<dcat:distribution rdf:resource="https://dcat-editor.com/store/28/resource/22"/>
 	<dcterms:publisher rdf:resource="https://dcat-editor.com/store/28/resource/7"/>
+	<dcat:keyword xml:lang="sv">kommun</dcat:keyword>
+	<dcat:keyword>Helsingborg</dcat:keyword>
 	<dcat:keyword>iCal</dcat:keyword>
 	<dcat:keyword>api</dcat:keyword>
 	<dcat:keyword xml:lang="sv">skola</dcat:keyword>
@@ -62,6 +66,9 @@
 	<dcat:keyword xml:lang="en">food</dcat:keyword>
 	<dcat:keyword xml:lang="en">meal</dcat:keyword>
 	<dcat:keyword xml:lang="en">nutrition</dcat:keyword>
+	<dcat:keyword xml:lang="sv">mashie</dcat:keyword>
+	<dcat:keyword xml:lang="sv">skolmatappen</dcat:keyword>
+	<dcat:keyword>örebro</dcat:keyword>
 	<adms:contactPoint rdf:resource="https://dcat-editor.com/store/28/resource/20"/>
 	<dcterms:issued>2015-09-18</dcterms:issued>
 	<dcat:theme rdf:resource="http://eurovoc.europa.eu/100157"/>
@@ -115,6 +122,18 @@
 	<vcard:fn>Andreas Krohn</vcard:fn>
 	<vcard:hasEmail rdf:resource="mailto:andreas@dopter.se"/>
 </vcard:Individual>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/28/resource/21">
+	<dcterms:title xml:lang="sv">Örebros skolor med öppna skolmatsmenyer</dcterms:title>
+	<dcterms:description xml:lang="sv">Detta är en lista på alla skolor i Örebros kommun som använder skolmatappen och därmed har sina skolmatsmenyer tillgängliga i JSON och iCal format.</dcterms:description>
+	<dcat:accessURL rdf:resource="http://blogg.orebro.se/enklarevardag/2015/09/25/prenumerera-pa-skolmatsmenyer/"/>
+	<dcterms:format>text/html</dcterms:format>
+</dcat:Distribution>
+<dcat:Distribution rdf:about="https://dcat-editor.com/store/28/resource/22">
+	<dcterms:title xml:lang="sv">Helsingborgs skolor med öppna skolmatsmenyer</dcterms:title>
+	<dcterms:description xml:lang="sv">Detta är en lista på alla skolor i Helsingborgs kommun som använder skolmatappen och därmed har sina skolmatsmenyer tillgängliga i JSON och iCal format.</dcterms:description>
+	<dcat:accessURL rdf:resource="https://oppna.helsingborg.se/datakallor/skolmat/"/>
+	<dcterms:format>text/html</dcterms:format>
+</dcat:Distribution>
 <dcat:Distribution rdf:about="https://dcat-editor.com/store/28/resource/3">
 	<dcterms:title xml:lang="en">List Data Providers</dcterms:title>
 	<dcterms:title xml:lang="sv">Lista dataleverantörer </dcterms:title>
