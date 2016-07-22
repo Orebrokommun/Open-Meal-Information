@@ -61,7 +61,7 @@ $(function() {
   		var currentProvider = $("#openMealWizard #dataProviders option:selected");  		
   		var openMealURL = currentProvider.data('baseurl') + '/openmeal/v2/meals.json?distributorID=' + currentOption.val();
   		var code = '<div id="openMealWidget" data-language="' + currentOption.data('language') + '" data-openmealurl="' + openMealURL + '"></div>\n' +  		
-    			   '<script src="http://orebrokommun.github.io/Open-Meal-Information/js/widget.js" id="openMealWidgetScript" data-widgets="openMealWidget"></script>';
+    			   '<script src="https://orebrokommun.github.io/Open-Meal-Information/js/widget.js" id="openMealWidgetScript" data-widgets="openMealWidget"></script>';
 
 		$('#openMealWizard #openMealWidgetCode code').text(code);   		
 
