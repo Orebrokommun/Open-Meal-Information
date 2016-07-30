@@ -13,7 +13,7 @@
             "lang": "sv",
             "name": "Skolmaten",
             "url": "http://dinskolmat.se/",
-            "baseUrl": "http://meny.dinskolmat.se/api",
+            "baseUrl": "http://skolmaten.se/api",
             "address": {
               "addressCountry": "SE"
             },
