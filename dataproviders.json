@@ -1,5 +1,15 @@
 {
-    "data" : [
+    "data" : [        
+        {
+            "lang": "sv",
+            "name": "Skolmaten",
+            "url": "http://dinskolmat.se/",
+            "baseUrl": "https://skolmaten.se/api",
+            "address": {
+              "addressCountry": "SE"
+            },
+            "email": "info@dinskolmat.se"
+        },
         {
             "name" : "Mashie",    
             "lang" : "sv",  
@@ -8,16 +18,6 @@
             },
             "url" : "http://www.mashie.se/",            
             "baseUrl" : "https://mpi.mashie.eu/api"
-        },
-        {
-            "lang": "sv",
-            "name": "Skolmaten",
-            "url": "http://dinskolmat.se/",
-            "baseUrl": "http://skolmaten.se/api",
-            "address": {
-              "addressCountry": "SE"
-            },
-            "email": "info@dinskolmat.se"
         }
     ]
 }
