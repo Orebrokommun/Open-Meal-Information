@@ -11,7 +11,7 @@ The specification and other information for how to create open meal information 
 * An [API](/Open-Meal-Information/doc/basics.html) with the full data set in JSON format
 * [iCalendar](/Open-Meal-Information/doc/icalendar.html) with a subset of the information. The calendar-feed can be used by smartphones and pads as well as other calendar software to subscribe to the information.
 
-Questions and suggestions can be sent to [bjorn.hagstrom@orebro.se](mailto:bjorn.hagstrom@orebro.se).
+Questions and suggestions can be sent to [andreas.krohn@helsingborg.se](mailto:andreas.krohn@helsingborg.se).
 
 ##Example
 This is an example of [an iCalendar feed available for subscription for the school ”Bruket” in Örebro, Sweden](https://mpi.mashie.eu/public/app/%C3%96rebro%20kommun/C7A32CE6). The page is in swedish but the subscription link is called ”Kalender” and is located in the menu on the left. Copy the link for use in your calendar software or just click it, most devices will ask you if you want to subscribe. This is what it will look like on an ipad:
